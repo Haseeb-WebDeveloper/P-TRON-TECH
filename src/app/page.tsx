@@ -1,16 +1,31 @@
 "use client"
 
-import { useLanguage } from "@/contexts/LanguageContext";
-import { translator } from "@/constent/translator";
+// import { Hero } from "@/components/layout/Hero";
+// import { Concept } from "@/components/layout/Concept";
+// import { WhyItWorks } from "@/components/layout/WhyItWorks";
+// import { Market } from "@/components/layout/Market";
+// import { Roadmap } from "@/components/layout/Roadmap";
+// import { Team } from "@/components/layout/Team";
+// import { WhyInvest } from "@/components/layout/WhyInvest";
+// import { UrgencyAndFaq } from "@/components/layout/UrgencyAndFaq";
+// import { HowToInvest } from "@/components/layout/HowToInvest";
+import { Footer } from "@/components/layout/Footer";
+import Test from "@/components/layout/test";
 
 export default function Home() {
-  const { lang } = useLanguage();
-  const { content } = translator;
-
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">{content.hero.title[lang]}</h1>
-      <p className="text-lg">{content.hero.description[lang]}</p>
+    <div>
+      <Test />
+      {/* <Hero />
+      <Concept />
+      <WhyItWorks />
+      <Market />
+      <Roadmap />
+      <Team />
+      <WhyInvest />
+      <UrgencyAndFaq />
+      <HowToInvest /> */}
+      <Footer />
     </div>
   );
 }
